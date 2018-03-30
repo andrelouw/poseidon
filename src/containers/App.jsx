@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import CssModules from 'react-css-modules';
+import { Container, Row, Col, Button } from 'reactstrap';
 
 import logo from '../logo.svg';
-import styles from './App.css';
+import styles from './App.scss';
 
 // eslint-disable-next-line
 class App extends Component {
@@ -16,6 +17,15 @@ class App extends Component {
         <p styleName="intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <Container>
+          <Row>
+            <Col md="3"><Button color="blue">Hello Button</Button></Col>
+            <Col md="3">Hello1</Col>
+            <Col md="3">Hello1</Col>
+            <Col md="3">Hello1</Col>
+          </Row>
+        </Container>
+
       </div>
     );
   }
