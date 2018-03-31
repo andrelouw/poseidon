@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Container } from 'reactstrap';
 
 import Landing from '../components/Landing/Landing';
 
@@ -7,9 +6,7 @@ import Landing from '../components/Landing/Landing';
 class App extends Component {
   render() {
     return (
-      <Container>
-        <Landing />
-      </Container>
+      <Landing />
     );
   }
 }
