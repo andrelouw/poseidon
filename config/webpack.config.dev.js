@@ -184,7 +184,7 @@ module.exports = {
             ],
           },
           {
-            test: /\.scss$/,
+            test: /\.s[ac]ss$/,
             use: [
               require.resolve('style-loader'),
               {
@@ -258,6 +258,10 @@ module.exports = {
                 },
               },
             ],
+          },
+          {
+            test: /\.(png|woff|woff2|eot|ttf|svg|otf)$/,
+            loader: 'url-loader?limit=100000',
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.
           // When you `import` an asset, you get its (virtual) filename.

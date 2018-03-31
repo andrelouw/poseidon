@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 // eslint-disable-next-line
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import './index.scss';
+import './index.sass';
 import App from './containers/App';
 import registerServiceWorker from './registerServiceWorker';
 
