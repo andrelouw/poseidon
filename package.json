@@ -5,7 +5,7 @@
   "dependencies": {
     "autoprefixer": "^8.2.0",
     "babel-core": "6.26.0",
-    "babel-eslint": "7.2.3",
+    "babel-eslint": "^7.2.3",
     "babel-jest": "20.0.3",
     "babel-loader": "7.1.2",
     "babel-preset-react-app": "^3.1.1",
@@ -95,7 +95,7 @@
     "extends": "react-app"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
+    "eslint": "^4.9.0",
     "eslint-cli": "^1.1.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.7.0",
