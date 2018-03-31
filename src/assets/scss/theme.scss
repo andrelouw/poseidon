@@ -1,0 +1,17 @@
+@import "fonts";
+@import "color_palette";
+
+/* Text styles */
+
+:global(h1) {
+  font-family: Oswald, sans-serif;
+  font-size: 44px;
+  font-weight: 200;
+  letter-spacing: 4px;
+  text-align: center;
+  color: $black;
+}
+
+:global(p) {
+  
+}
