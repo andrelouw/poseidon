@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import CssModules from 'react-css-modules';
 import { Container, Row } from 'reactstrap';
 
+import styles from './Info.sass';
 import Card from './Card/Card';
 
 // eslint-disable-next-line
@@ -9,9 +11,9 @@ class Info extends Component {
     super();
     this.state = {
       infoCards: [
-        { id: 1, title: 'Hello Card 1', content: 'Content 1' },
-        { id: 2, title: 'Hello Card 2', content: 'Content 2' },
-        { id: 3, title: 'Hello Card 3', content: 'Content 3' },
+        { id: 1, title: '31 . 08 . 2018', content: '15:00 stap die bruid in… hopelik!' },
+        { id: 2, title: 'Lace on Timber' },
+        { id: 3, title: 'RSVP', content: 'teen 31.07.2018' },
       ],
     };
   }
@@ -26,9 +28,9 @@ class Info extends Component {
     ));
 
     return (
-      <section id="info">
+      <section id="info" styleName="section">
         <Container>
-          <h1>
+          <h1 styleName="section-title">
             {'Let\'s Celebrate!'}
           </h1>
           <Row>
@@ -40,4 +42,4 @@ class Info extends Component {
   }
 }
 
-export default Info;
+export default CssModules(Info, styles);

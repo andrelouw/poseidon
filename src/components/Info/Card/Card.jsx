@@ -1,17 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import CssModules from 'react-css-modules';
 import { Col } from 'reactstrap';
+
+import styles from './Card.sass';
 
 const card = props =>
   (
     <Col sm="4">
-      <div className="icon-card">
-        <div className="icon-card-header">
-          <div className="icon-card-icon" />
+      <div styleName="icon-card">
+        <div styleName="card-header">
+          <div styleName="card-icon" />
         </div>
-        <div className="icon-card-content">
-          <h2>{props.title}</h2>
-          <p>{props.content}</p>
+        <div styleName="card-content">
+          <p styleName="title">{props.title}</p>
+          <p styleName="content">{props.content}</p>
         </div>
       </div>
     </Col>
@@ -20,7 +23,11 @@ const card = props =>
 
 card.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
+  content: PropTypes.string,
 };
 
-export default card;
+card.defaultProps = {
+  content: '',
+};
+
+export default CssModules(card, styles);
