@@ -4,25 +4,37 @@ import CssModules from 'react-css-modules';
 
 import styles from './VA.sass';
 import Venue from './Venue/Venue';
+import Accommodation from './Accommodation/Accommodation';
 
 class VA extends Component {
   constructor() {
     super();
     this.state = {
       venue: {
-        name: 'Lace on Timber',
-        description: 'Kyk solank bietjie na\n' +
+        name: 'lace on timber',
+        description: 'kyk solank bietjie na\n' +
         'ons trouvenue,\n' +
-        'net buite Pretoria:',
-        btnText: 'Lace on Timber website',
+        'net buite pretoria:',
+        btnText: 'lace on timber website',
         btnUrl: 'http://www.news.com',
+      },
+      accommodation: {
+        heading: 'Waar le jy?',
+        description: 'Hier is ’n lys van gastehuise naby die venue:',
+        buttons: [
+          { btnText: 'Silver Fig Guesthouse', btnUrl: 'http://www.news.com' },
+          { btnText: 'Guesthouse @56', btnUrl: 'http://www.news.com' },
+          { btnText: 'Pearl Guesthouse', btnUrl: 'http://www.news.com' },
+          { btnText: 'Bullfrogs Nest Guesthouse', btnUrl: 'http://www.news.com' },
+        ],
       },
     };
   }
 
   render() {
     return (
-      <section id="venue">
+      <section id="venue" styleName="section">
+        <h1>Venue & Akkommodasie</h1>
         <Container>
           <Row>
             <Venue
@@ -30,6 +42,11 @@ class VA extends Component {
               description={this.state.venue.description}
               btnText={this.state.venue.btnText}
               btnUrl={this.state.venue.btnUrl}
+            />
+            <Accommodation
+              heading={this.state.accommodation.heading}
+              description={this.state.accommodation.description}
+              buttons={this.state.accommodation.buttons}
             />
           </Row>
         </Container>
