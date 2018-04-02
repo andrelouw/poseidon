@@ -5,7 +5,6 @@ import { Container, Row } from 'reactstrap';
 import styles from './Info.sass';
 import Card from './Card/Card';
 
-// eslint-disable-next-line
 class Info extends Component {
   constructor() {
     super();
@@ -30,9 +29,7 @@ class Info extends Component {
     return (
       <section id="info" styleName="section">
         <Container>
-          <h1 styleName="section-title">
-            {'Let\'s Celebrate!'}
-          </h1>
+          <h1 styleName="section-title">{'Let\'s Celebrate!'}</h1>
           <Row>
             {cards}
           </Row>
