@@ -61,7 +61,7 @@ class Landing extends Component {
     }
 
     return (
-      <div styleName="header">
+      <header styleName="header">
         <Container>
           <Row>
             <Col>
@@ -75,7 +75,7 @@ class Landing extends Component {
             </Col>
           </Row>
         </Container>
-      </div>
+      </header>
     );
   }
 }
