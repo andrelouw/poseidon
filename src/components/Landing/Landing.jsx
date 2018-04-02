@@ -48,6 +48,7 @@ class Landing extends Component {
 
   startTimer() {
     if (this.countDownTimer === 0) {
+      this.tick();
       this.countDownTimer = setInterval(this.tick, 1000);
       this.setState({ daysLeft: true });
     }
