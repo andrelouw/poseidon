@@ -36,7 +36,7 @@ class Detail extends Component {
     return (
       <section id="detail" styleName="section">
         <Container>
-          <h1 styleName="section-title">Enjoy responsibly</h1>
+          <h1>Enjoy responsibly</h1>
           <Row>
             {cards}
           </Row>
