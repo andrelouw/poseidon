@@ -2,23 +2,23 @@ import React, { Component } from 'react';
 import CssModules from 'react-css-modules';
 import { Container, Row } from 'reactstrap';
 
-import styles from './Info.sass';
+import styles from './RSVP.sass';
 import Card from '../shared/Card/Card';
 
-class Info extends Component {
+class RSVP extends Component {
   constructor() {
     super();
     this.state = {
-      infoCards: [
-        { id: 1, title: '31 . 08 . 2018', content: '15:00 stap die bruid in… hopelik!' },
-        { id: 2, title: 'Lace on Timber' },
-        { id: 3, title: 'RSVP', content: 'teen 31.07.2018' },
+      rsvpCards: [
+        { id: 1, title: 'Email ons!', content: 'michelinegrobbelaar95@gmail.com' },
+        { id: 2, title: 'Sms of Whatsapp ons!', content: 'M: 082 352 1962 A: 082 853 9750' },
+        { id: 3, title: 'Laatweet ons!', content: 'Teen 31 Julie 2018' },
       ],
     };
   }
 
   render() {
-    const cards = this.state.infoCards.map(card => (
+    const cards = this.state.rsvpCards.map(card => (
       <Card
         key={card.id}
         title={card.title}
@@ -29,7 +29,7 @@ class Info extends Component {
     return (
       <section id="info" styleName="section">
         <Container>
-          <h1>{'Let\'s Celebrate!'}</h1>
+          <h1>{'RSVP\'s'}</h1>
           <Row>
             {cards}
           </Row>
@@ -39,4 +39,4 @@ class Info extends Component {
   }
 }
 
-export default CssModules(Info, styles);
+export default CssModules(RSVP, styles);

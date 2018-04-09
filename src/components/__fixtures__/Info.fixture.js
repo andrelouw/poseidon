@@ -1,5 +1,5 @@
 import Info from '../Info/Info';
-import Card from '../Info/Card/Card';
+import Card from '../shared/Card/Card';
 
 export default [
   {
