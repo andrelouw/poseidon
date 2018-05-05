@@ -10,7 +10,7 @@ const card = props =>
     <Col sm="4">
       <div styleName="icon-card">
         <div styleName="card-header">
-          <div styleName="card-icon" />
+          <img styleName="card-icon" src={props.icon} alt="icon" />
         </div>
         <div styleName="card-content">
           <p styleName="title">{props.title}</p>
@@ -24,6 +24,7 @@ const card = props =>
 card.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
+  icon: PropTypes.string.isRequired,
 };
 
 card.defaultProps = {
