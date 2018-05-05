@@ -3,6 +3,8 @@ import CssModules from 'react-css-modules';
 import { Col, Container, Row } from 'reactstrap';
 
 import styles from './Gifts.sass';
+import athome from '../../assets/svg/athome.svg';
+import fund from '../../assets/svg/fund.svg';
 
 const gifts = () => (
   <section id="gifts" styleName="section">
@@ -10,7 +12,9 @@ const gifts = () => (
     <Container>
       <Row styleName="gifts-left">
         <Col sm="3" >
-          <div styleName="gift-icon" />
+          <div styleName="gift-icon" >
+            <img styleName="card-icon" src={athome} alt="icon" />
+          </div>
         </Col>
         <Col sm="9">
           <h2>Register</h2>
@@ -28,7 +32,9 @@ const gifts = () => (
           </p>
         </Col>
         <Col sm="3" >
-          <div styleName="gift-icon" />
+          <div styleName="gift-icon" >
+            <img styleName="card-icon" src={fund} alt="icon" />
+          </div>
         </Col>
       </Row>
     </Container>
