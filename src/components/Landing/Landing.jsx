@@ -63,7 +63,9 @@ class Landing extends Component {
 
     return (
       <header styleName="header">
-        <img styleName="protea" alt="protea" src={protea} />
+        <div styleName="protea-container">
+          <img styleName="protea" alt="protea" src={protea} />
+        </div>
         <Container>
           <Row>
             <Col>
