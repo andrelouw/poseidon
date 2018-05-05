@@ -4,15 +4,33 @@ import { Container, Row } from 'reactstrap';
 
 import styles from './RSVP.sass';
 import Card from '../shared/Card/Card';
+import rsvp from '../../assets/svg/rsvp.svg';
+import whatsapp from '../../assets/svg/whatsapp.svg';
+import bell from '../../assets/svg/bell.svg';
 
 class RSVP extends Component {
   constructor() {
     super();
     this.state = {
       rsvpCards: [
-        { id: 1, title: 'Email ons!', content: 'michelinegrobbelaar95@gmail.com' },
-        { id: 2, title: 'Sms of Whatsapp ons!', content: 'M: 082 352 1962 A: 082 853 9750' },
-        { id: 3, title: 'Laatweet ons!', content: 'Teen 31 Julie 2018' },
+        {
+          id: 1,
+          title: 'Email ons!',
+          content: 'michelinegrobbelaar95@gmail.com',
+          icon: rsvp,
+        },
+        {
+          id: 2,
+          title: 'Sms of Whatsapp ons!',
+          content: 'M: 082 352 1962 A: 082 853 9750',
+          icon: whatsapp,
+        },
+        {
+          id: 3,
+          title: 'Laatweet ons!',
+          content: 'Teen 31 Julie 2018',
+          icon: bell,
+        },
       ],
     };
   }
@@ -23,6 +41,7 @@ class RSVP extends Component {
         key={card.id}
         title={card.title}
         content={card.content}
+        icon={card.icon}
       />
     ));
 
