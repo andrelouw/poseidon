@@ -7,6 +7,7 @@ import Card from '../shared/Card/Card';
 import rsvp from '../../assets/svg/rsvp.svg';
 import whatsapp from '../../assets/svg/whatsapp.svg';
 import bell from '../../assets/svg/bell.svg';
+import protea from '../../assets/svg/protea_3.svg';
 
 class RSVP extends Component {
   constructor() {
@@ -47,6 +48,9 @@ class RSVP extends Component {
 
     return (
       <section id="info" styleName="section">
+        <div styleName="protea-container">
+          <img styleName="protea" src={protea} alt="protea" />
+        </div>
         <Container>
           <h1>{'RSVP\'s'}</h1>
           <Row>
