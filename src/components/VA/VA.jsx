@@ -5,6 +5,7 @@ import CssModules from 'react-css-modules';
 import styles from './VA.sass';
 import Venue from './Venue/Venue';
 import Accommodation from './Accommodation/Accommodation';
+import protea from '../../assets/svg/protea_3.svg';
 
 class VA extends Component {
   constructor() {
@@ -34,6 +35,9 @@ class VA extends Component {
   render() {
     return (
       <section id="venue" styleName="section">
+        <div styleName="protea-container">
+          <img styleName="protea" src={protea} alt="protea" />
+        </div>
         <h1>Venue & Akkommodasie</h1>
         <Container>
           <Row>
