@@ -11,7 +11,7 @@ const venue = props =>
       <h2>{props.name}</h2>
       <p styleName="description">{props.description}</p>
       {/* eslint-disable-next-line */}
-      <a href={props.btnUrl} target="_blank" className="btn btn-dark">{props.btnText}</a>
+      <a href={props.btnUrl} target="_blank" styleName="button" className="btn">{props.btnText}</a>
 
     </Col>
   );

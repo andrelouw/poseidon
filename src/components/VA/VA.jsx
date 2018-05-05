@@ -11,6 +11,7 @@ class VA extends Component {
   constructor() {
     super();
     this.state = {
+      // TODO: Add in correct urls
       venue: {
         name: 'lace on timber',
         description: 'kyk solank bietjie na\n' +
@@ -23,6 +24,7 @@ class VA extends Component {
         heading: 'Waar le jy?',
         description: 'Hier is ’n lys van gastehuise naby die venue:',
         buttons: [
+          // TODO: Add in correct urls
           { btnText: 'Silver Fig Guesthouse', btnUrl: 'http://www.news.com' },
           { btnText: 'Guesthouse @56', btnUrl: 'http://www.news.com' },
           { btnText: 'Pearl Guesthouse', btnUrl: 'http://www.news.com' },

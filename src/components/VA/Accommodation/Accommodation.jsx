@@ -19,7 +19,8 @@ class Accommodation extends Component {
             <a
               href={this.props.buttons[0].btnUrl}
               target="_blank"
-              className="btn btn-dark btn-block"
+              className="btn btn-block"
+              styleName="button"
             >{this.props.buttons[0].btnText}
             </a>
           </Col>
@@ -27,7 +28,8 @@ class Accommodation extends Component {
             <a
               href={this.props.buttons[1].btnUrl}
               target="_blank"
-              className="btn btn-dark btn-block"
+              className="btn btn-block"
+              styleName="button"
             >{this.props.buttons[1].btnText}
             </a>
           </Col>
@@ -38,7 +40,8 @@ class Accommodation extends Component {
             <a
               href={this.props.buttons[2].btnUrl}
               target="_blank"
-              className="btn btn-dark btn-block"
+              className="btn btn-block"
+              styleName="button"
             >{this.props.buttons[2].btnText}
             </a>
           </Col>
@@ -46,7 +49,8 @@ class Accommodation extends Component {
             <a
               href={this.props.buttons[3].btnUrl}
               target="_blank"
-              className="btn btn-dark btn-block"
+              className="btn btn-block"
+              styleName="button"
             >{this.props.buttons[3].btnText}
             </a>
           </Col>
