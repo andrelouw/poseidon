@@ -88,7 +88,7 @@ class Example extends Component {
           previous={this.previous}
         >
           <CarouselIndicators
-           items={items}
+            items={items}
             activeIndex={activeIndex}
             onClickHandler={this.goToIndex}
           />

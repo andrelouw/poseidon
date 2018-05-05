@@ -3,6 +3,7 @@ import { Container, Col, Row } from 'reactstrap';
 import CssModules from 'react-css-modules';
 
 import styles from './Landing.sass';
+import protea from '../../assets/svg/protea_1.svg';
 
 class Landing extends Component {
   constructor() {
@@ -62,6 +63,7 @@ class Landing extends Component {
 
     return (
       <header styleName="header">
+        <img styleName="protea" alt="protea" src={protea} />
         <Container>
           <Row>
             <Col>
