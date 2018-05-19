@@ -49,7 +49,9 @@ class RSVP extends Component {
     return (
       <section id="info" styleName="section">
         <div styleName="protea-container">
-          <img styleName="protea" src={protea} alt="protea" />
+          <div styleName="protea">
+            <img src={protea} alt="protea" />
+          </div>
         </div>
         <Container>
           <h1>{'RSVP\'s'}</h1>

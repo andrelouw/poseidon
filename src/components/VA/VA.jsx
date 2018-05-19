@@ -38,7 +38,9 @@ class VA extends Component {
     return (
       <section id="venue" styleName="section">
         <div styleName="protea-container">
-          <img styleName="protea" src={protea} alt="protea" />
+          <div styleName="protea">
+            <img src={protea} alt="protea" />
+          </div>
         </div>
         <h1>Venue & Akkommodasie</h1>
         <Container>

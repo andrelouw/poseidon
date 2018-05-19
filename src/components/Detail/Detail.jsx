@@ -92,7 +92,9 @@ class Detail extends Component {
     return (
       <section id="detail" styleName="section">
         <div styleName="protea-container">
-          <img styleName="protea" alt="protea" src={protea} />
+          <div styleName="protea">
+            <img alt="protea" src={protea} />
+          </div>
         </div>
         <Container>
           <h1>Enjoy responsibly</h1>
