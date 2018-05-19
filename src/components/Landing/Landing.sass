@@ -29,8 +29,18 @@
 .header
   height: 100vh
   position: relative
-  background: white url(../../assets/img/landing.jpg) no-repeat bottom center scroll
+  background: white url(../../assets/img/landing.jpg) no-repeat right center scroll
   background-size: cover
+  right: 0
+
+  @include xsmall
+    background-position: calc(100% + 80px)
+
+  @include iphonex
+    background-position: calc(100% + 130px)
+
+  @media (max-height: 420px)
+    background-position: right
 
 .intro
   display: table-cell
@@ -50,18 +60,20 @@ header h1
   top: 180px
   left: 0
 
-  @include xsmall
-
-  @include large
-
-  @include medium
-
   @include small
+    left: auto
+    right: 590px
+
+  @include xsmall
+    left: auto
+    right: 590px
 
 .protea img
   position: absolute
   top: 0
   right: 0
   width: 120%
+
+
 
 
