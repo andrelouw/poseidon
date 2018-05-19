@@ -6,6 +6,7 @@ import Detail from '../components/Detail/Detail';
 import Quote from '../components/Quote/Quote';
 import VA from '../components/VA/VA';
 import Gifts from '../components/Gifts/Gifts';
+import People from '../components/People/People';
 import RSVP from '../components/RSVP/RSVP';
 
 // eslint-disable-next-line
@@ -19,6 +20,7 @@ class App extends Component {
         <Quote />
         <VA />
         <Gifts />
+        <People />
         <RSVP />
       </div>
     );

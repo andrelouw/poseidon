@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import {
   Carousel,
   CarouselItem,
-  CarouselControl,
   CarouselIndicators,
 } from 'reactstrap';
 
 import Group from './Group/Group';
+import styles from './People.sass';
 
 import aj from '../../assets/img/aj.png';
 import dewald from '../../assets/img/dewald.png';
@@ -25,7 +25,7 @@ const peopleGroups = [
       {
         key: 1,
         name: 'AJ Meyer',
-        quote: 'Comrades AJ hy het al die comrades gedoen en hy is ’n yster',
+        quote: 'Comrades AJ \n hy het al die comrades gedoen en hy is ’n yster',
         image: aj,
       },
       {
@@ -130,6 +130,7 @@ class Example extends Component {
           onExiting={this.onExiting}
           onExited={this.onExited}
           key={item.key}
+          // cssModule={styles}
         >
           <Group
             heading={item.heading}
@@ -139,12 +140,8 @@ class Example extends Component {
       );
     });
 
-    const styling = {
-      backgroundColor: '#4f4f4f',
-    };
-
     return (
-      <section style={styling}>
+      <section>
         <h1>Carousel</h1>
         <Carousel
           activeIndex={activeIndex}
@@ -155,10 +152,10 @@ class Example extends Component {
             items={this.state.peopleGroups}
             activeIndex={activeIndex}
             onClickHandler={this.goToIndex}
+            cssModule={styles}
           />
           {slides}
-          <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-          <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+
         </Carousel>
       </section>
     );
