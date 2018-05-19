@@ -4,30 +4,89 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  Row,
 } from 'reactstrap';
 
-import Card from '../shared/Card/Card';
+import Group from './Group/Group';
 
-const items = [
+import aj from '../../assets/img/aj.png';
+import dewald from '../../assets/img/dewald.png';
+import jandre from '../../assets/img/jandre.png';
+import pieter from '../../assets/img/pieter.png';
+import michelle from '../../assets/img/michelle.png';
+import bianca from '../../assets/img/bianca.png';
+import alta from '../../assets/img/alta.png';
+import brigitte from '../../assets/img/brigitte.png';
+
+const peopleGroups = [
   {
     key: 1,
-    component: <Row><Card title="Andre" content="Hello" /></Row>,
-  },
-  {
-    key: 3,
-    component: <Row><Card title="Stefan" content="Hello" /></Row>,
+    heading: 'Ramkamp',
+    cards: [
+      {
+        key: 1,
+        name: 'AJ Meyer',
+        quote: 'Comrades AJ hy het al die comrades gedoen en hy is ’n yster',
+        image: aj,
+      },
+      {
+        key: 2,
+        name: 'Dewald Steyl',
+        quote: '"Mr Sky" He never goes out of style',
+        image: dewald,
+      },
+      {
+        key: 3,
+        name: 'Jandré Reynecke',
+        quote: 'Bass brother from the same mother',
+        image: jandre,
+      },
+      {
+        key: 4,
+        name: 'Pieter Reynecke',
+        quote: 'Broer brother from another mother, letterlik',
+        image: pieter,
+      },
+    ],
   },
   {
     key: 2,
-    component: <Row><Card title="Stephanie" content="Hello" /></Row>,
+    heading: 'Team Bride',
+    cards: [
+      {
+        key: 1,
+        name: 'Michelle Evert',
+        quote: 'Me-shell (skilpad animation/img)',
+        image: michelle,
+      },
+      {
+        key: 2,
+        name: 'Bianca Steyl',
+        quote: 'Sy het onlangs styl gekry',
+        image: bianca,
+      },
+      {
+        key: 3,
+        name: 'Alta Maartens',
+        quote: 'America\'s sweetheart',
+        image: alta,
+      },
+      {
+        key: 4,
+        name: 'Brigitte Louw',
+        quote: 'Louw maar nie flou nie',
+        image: brigitte,
+      },
+    ],
   },
 ];
 
 class Example extends Component {
   constructor(props) {
     super(props);
-    this.state = { activeIndex: 0 };
+    this.state = {
+      activeIndex: 0,
+      peopleGroups: peopleGroups,  // eslint-disable-line
+    };
     this.next = this.next.bind(this);
     this.previous = this.previous.bind(this);
     this.goToIndex = this.goToIndex.bind(this);
@@ -45,13 +104,15 @@ class Example extends Component {
 
   next() {
     if (this.animating) return;
-    const nextIndex = this.state.activeIndex === items.length - 1 ? 0 : this.state.activeIndex + 1;
+    const nextIndex = this.state.activeIndex ===
+    this.state.peopleGroups.length - 1 ? 0 : this.state.activeIndex + 1;
     this.setState({ activeIndex: nextIndex });
   }
 
   previous() {
     if (this.animating) return;
-    const nextIndex = this.state.activeIndex === 0 ? items.length - 1 : this.state.activeIndex - 1;
+    const nextIndex = this.state.activeIndex ===
+    0 ? this.state.peopleGroups.length - 1 : this.state.activeIndex - 1;
     this.setState({ activeIndex: nextIndex });
   }
 
@@ -63,20 +124,23 @@ class Example extends Component {
   render() {
     const { activeIndex } = this.state;
 
-    const slides = items.map((item) => { // eslint-disable-line
+    const slides = this.state.peopleGroups.map((item) => { // eslint-disable-line
       return (
         <CarouselItem
           onExiting={this.onExiting}
           onExited={this.onExited}
           key={item.key}
         >
-          {item.component}
+          <Group
+            heading={item.heading}
+            cards={item.cards}
+          />
         </CarouselItem>
       );
     });
 
     const styling = {
-      backgroundColor: '#4e4e4e',
+      backgroundColor: '#4f4f4f',
     };
 
     return (
@@ -88,7 +152,7 @@ class Example extends Component {
           previous={this.previous}
         >
           <CarouselIndicators
-            items={items}
+            items={this.state.peopleGroups}
             activeIndex={activeIndex}
             onClickHandler={this.goToIndex}
           />
