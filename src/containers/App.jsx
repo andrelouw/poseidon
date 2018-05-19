@@ -8,12 +8,14 @@ import VA from '../components/VA/VA';
 import Gifts from '../components/Gifts/Gifts';
 import People from '../components/People/People';
 import RSVP from '../components/RSVP/RSVP';
+import Mediahelper from '../components/Mediahelper/Mediahelper';
 
 // eslint-disable-next-line
 class App extends Component {
   render() {
     return (
       <div>
+        <Mediahelper />
         <Landing />
         <Info />
         <Detail />
