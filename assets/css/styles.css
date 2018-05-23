@@ -59,6 +59,15 @@ section {
     padding-bottom: 189px;
 }
 
+.button {
+    color: black;
+    border-color: #a6c6c6;
+}
+
+.button:hover {
+    color: #a6c6c6;
+}
+
 /* Proteas */
 .protea-container {
     position: relative;
@@ -250,4 +259,25 @@ header h1 {
     text-align: center;
     color: black;
 }
+
+/* Venue en Accommodation */
+#vna .description {
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#vna .protea {
+    top: 0px;
+    left: 0px;
+    width: 218px;
+    height: 342px;
+}
+
+#vna .protea img {
+    width: 230px;
+    transform: rotate(-180deg);
+    opacity: 0.47;
+}
+
 
