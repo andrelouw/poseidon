@@ -305,5 +305,16 @@ header h1 {
     margin-top: 15px;
 }
 
+/*RSVP*/
+#rsvp .protea {
+    top: 0px;
+    right: 0px;
+    width: 294px;
+    height: 629px;
+}
+
+#rsvp .protea img {
+    width: 120%
+}
 
 
