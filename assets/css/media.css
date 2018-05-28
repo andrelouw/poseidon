@@ -46,6 +46,11 @@
         right: auto;
         left: 680px;
     }
+
+    #vna .protea {
+        left: auto;
+        right: 780px;
+    }
 }
 
 /* Small */
@@ -65,6 +70,16 @@
     #detail .protea {
         right: auto;
         left: 680px;
+    }
+
+    #vna .protea {
+        left: auto;
+        right: 780px;
+    }
+
+    #rsvp .protea {
+        right: auto;
+        left: 690px;
     }
 }
 /* Medium */

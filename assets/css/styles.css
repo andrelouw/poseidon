@@ -286,10 +286,8 @@ header h1 {
 }
 
 #vna .protea {
-    top: 0px;
-    left: 0px;
-    width: 218px;
-    height: 342px;
+    top: -190px;
+    left: -20px;
 }
 
 #vna .protea img {
@@ -325,7 +323,7 @@ header h1 {
 
 /*RSVP*/
 #rsvp .protea {
-    top: 0px;
+    top: -400px;
     right: 0px;
     width: 294px;
     height: 629px;
