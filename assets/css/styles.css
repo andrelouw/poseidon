@@ -18,24 +18,23 @@
 html {
     margin: 0;
     padding: 0;
-    background-color: white;
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+    background-color: white;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: white;
     overflow-x: hidden;
     width: 100vw;
     height: 100vh;
+    background-color: white;
 }
 
 /* Text Styles */
 h1 {
-
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     font-size: 3rem;
@@ -246,13 +245,16 @@ header h1 {
 }
 
 /* Quote */
-
 #quote {
-    background: white url('../img/quote.jpg') no-repeat center center fixed;
+    background: url('../img/quote.jpg') no-repeat bottom center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     padding: 50px 0;
     height: 300px;
 }
+
 #quote .text {
     font-family: Oswald, sans-serif;
     font-size: 1.5rem;
@@ -334,4 +336,48 @@ header h1 {
     width: 120%
 }
 
+/* People */
+#carousel-people {
+    width: 100%;
+}
+
+.carousel-indicators {
+    position: relative;
+}
+.carousel-indicators li {
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background-color: white;
+    border: solid 1.5px black;
+}
+
+.carousel-indicators .active {
+    background-color: #979797;
+}
+
+#people .carousel-inner {
+   min-height: 485px;
+}
+
+#people .name {
+    font-family: Oswald, sans-serif;
+    font-size: 2.1rem;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    color: black;
+}
+
+#people .quote {
+    font-family: Avenir, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+    color: black;
+}
+
+#people .card-header {
+    margin-bottom: 45px
+}
 
