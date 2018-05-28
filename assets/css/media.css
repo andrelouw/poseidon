@@ -41,6 +41,11 @@
         left: auto;
         right: 590px;
     }
+
+    #detail .protea {
+        right: auto;
+        left: 680px;
+    }
 }
 
 /* Small */
@@ -56,8 +61,20 @@
         left: auto;
         right: 590px;
     }
+
+    #detail .protea {
+        right: auto;
+        left: 680px;
+    }
 }
 /* Medium */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #detail .protea {
+        right: auto;
+        left: 680px;
+    }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) {
 
 }
