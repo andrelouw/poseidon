@@ -1,0 +1,77 @@
+/*!* 320px (iPhone) *!*/
+/*@media screen and (max-width:320px) {*/
+/*}*/
+/*!* 480px (WVGA - Low End Windows Phone) *!*/
+/*@media screen and (max-width:480px) {*/
+
+/*}*/
+/*!* xGA iPad *!*/
+/*@media screen and (max-width:1024px) {*/
+
+/*}*/
+
+/*@media screen and (min-width:1024px) {*/
+
+/*}*/
+
+/*!* 1200px (Small Desktop, Netbook) *!*/
+/*@media screen and (max-width:1280px) {*/
+
+/*}*/
+/*!* Bootstrap 990px Breakpoint to 480px *!*/
+/*@media screen and (min-width:480px) and (max-width:991px) {*/
+
+/*}*/
+
+/*!* mobile phones *!*/
+/*@media (max-width: 450px) {*/
+
+/*}*/
+
+/* x-Small */
+@media (max-width: 767px) and (orientation: portrait) {
+    .landing {
+        background-position: calc(100% + 80px);
+        transition: background-position 1s ease-in-out;
+    }
+}
+
+@media (max-width: 767px) {
+    #landing .protea {
+        left: auto;
+        right: 590px;
+    }
+}
+
+/* Small */
+@media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+    #landing .protea {
+        left: auto;
+        right: 590px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #landing .protea {
+        left: auto;
+        right: 590px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) {
+
+}
+
+/* Large */
+@media (min-width: 1200px) and (orientation: portrait) {
+
+}
+
+/* iPhone X */
+@media (min-height: 812px) and (min-width: 375px) and (orientation: portrait) {
+    .landing {
+        background-position: calc(100% + 130px);
+        transition: background-position 1s ease-in-out;
+    }
+}
+
