@@ -71,8 +71,8 @@ p {
 
 /* Globals */
 section {
-    padding-top: 150px;
-    padding-bottom: 189px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .button {
@@ -198,7 +198,6 @@ header h1 {
 }
 
 /* Info */
-
 #info .card-section .title {
 
 }
@@ -263,7 +262,7 @@ header h1 {
     line-height: 2.04;
     letter-spacing: 0.075rem;
     text-align: center;
-    color: black
+    color: white;
 }
 
 #quote .verse {
@@ -275,7 +274,7 @@ header h1 {
     line-height: normal;
     letter-spacing: 0.09rem;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 /* Venue en Accommodation */
