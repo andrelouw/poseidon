@@ -55,10 +55,10 @@
 
 /* Small */
 @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
-    #landing .protea {
-        left: auto;
-        right: 590px;
-    }
+    /*#landing .protea {*/
+        /*left: auto;*/
+        /*right: 590px;*/
+    /*}*/
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -80,6 +80,11 @@
     #rsvp .protea {
         right: auto;
         left: 690px;
+    }
+
+    #people .protea {
+        left: auto;
+        right: 515px;
     }
 }
 /* Medium */

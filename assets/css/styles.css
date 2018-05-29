@@ -378,3 +378,14 @@ header h1 {
     margin-bottom: 45px
 }
 
+#people .protea {
+    top: -550px;
+    left: -270px;
+    width: 744px;
+    height: 816px;
+}
+
+#people .protea img {
+    width: 100%
+}
+
