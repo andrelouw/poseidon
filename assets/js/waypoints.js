@@ -39,4 +39,20 @@ $(document).ready(function(){
   $('.rsvp-wp-protea').waypoint(function() {
     $('.rsvp-wp-protea').addClass('fadeInRight');
   }, { offset: '110%' });
+
+  $('.vna-wp').css('opacity', 0);
+  $('.vna-wp').waypoint(function() {
+    $('.vna-wp').addClass('bounceIn');
+  }, { offset: '100%' });
+
+  $('.gifts-wp1').css('opacity', 0);
+  $('.gifts-wp1').waypoint(function() {
+    $('.gifts-wp1').addClass('fadeInLeft');
+  }, { offset: '80%' });
+
+  $('.gifts-wp2').css('opacity', 0);
+  $('.gifts-wp2').waypoint(function() {
+    $('.gifts-wp2').addClass('fadeInRight');
+  }, { offset: '80%' });
+
 });
