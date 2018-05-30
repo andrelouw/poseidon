@@ -55,4 +55,14 @@ $(document).ready(function(){
     $('.gifts-wp2').addClass('fadeInRight');
   }, { offset: '80%' });
 
+  $('.people-wp').css('opacity', 0);
+  $('.people-wp').waypoint(function() {
+    $('.people-wp').addClass('fadeInDown');
+  }, { offset: '75%' });
+
+  $('.rsvp-wp').css('opacity', 0);
+  $('.rsvp-wp').waypoint(function() {
+    $('.rsvp-wp').addClass('fadeInDown');
+  }, { offset: '75%' });
+
 });
