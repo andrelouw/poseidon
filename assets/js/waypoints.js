@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+  // $('#carousel-people').carousel('pause');
+
+  $('.carousel').waypoint(function() {
+    $('.carousel').carousel('cycle');
+  }, { offset: '75%' });
+
   $('.info-wp').css('opacity', 0);
   $('.info-wp').waypoint(function() {
     $('.info-wp').addClass('fadeInUp');
@@ -56,7 +62,7 @@ $(document).ready(function(){
   }, { offset: '80%' });
 
   $('.people-wp').css('opacity', 0);
-  $('.people-wp').waypoint(function() {
+  $('#people').waypoint(function() {
     $('.people-wp').addClass('fadeInDown');
   }, { offset: '75%' });
 
