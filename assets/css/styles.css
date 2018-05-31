@@ -78,6 +78,7 @@ section {
 .button {
     color: black;
     border-color: #a6c6c6;
+    margin-bottom: 10px;
 }
 
 .button:hover {
