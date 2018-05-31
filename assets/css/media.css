@@ -51,6 +51,27 @@
         left: auto;
         right: 780px;
     }
+
+    #rsvp .protea {
+        right: auto;
+        left: 690px;
+    }
+
+    #people .protea {
+        left: auto;
+        right: 515px;
+    }
+
+    .gift-icon {
+        width: 152px;
+        height: 152px;
+    }
+
+    #gifts .card-icon {
+        width: 135px;
+        height: 135px;
+        margin-top: 8px;
+    }
 }
 
 /* Small */
@@ -85,6 +106,17 @@
     #people .protea {
         left: auto;
         right: 515px;
+    }
+
+    .gift-icon {
+        width: 152px;
+        height: 152px;
+    }
+
+    #gifts .card-icon {
+        width: 135px;
+        height: 135px;
+        margin-top: 8px;
     }
 }
 /* Medium */
