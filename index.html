@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
             name='viewport'
             content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'
     />
 
     <title>Armann & Micheline Trou</title>
+    <!--TODO: favicon-->
     <link rel="icon" href="img/favicon.png">
 
     <!-- Bootstrap Core CSS -->
@@ -25,12 +25,25 @@
     <link href="assets/css/styles.css" rel="stylesheet">
     <link href="assets/css/media.css" rel="stylesheet">
     <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/loader.css" rel="stylesheet">
 
 </head>
 <body>
+<!-- Spinner -->
+<div id="loader-wrapper">
+    <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+</div>
+
 <!-- Landing -->
 <header class="landing" id="landing">
-    <div class="protea-container animated longer fadeInLeft delay-1s">
+    <div class="protea-container">
         <div class="protea">
             <img src="assets/svg/protea_1.svg" alt="protea">
         </div>
@@ -39,9 +52,9 @@
         <div class="row">
             <div class="landing-body">
                 <div class="intro">
-                    <h1 class="animated fadeInDown delay-05s">Dit is troutyd!</h1>
-                    <p class="title animated fadeInUp delay-1s">Armann & Micheline</p>
-                    <p id="timer" class="timer animated bounceIn delay-2s"></p>
+                    <h1>Dit is troutyd!</h1>
+                    <p class="title">Armann & Micheline</p>
+                    <p id="timer" class="timer"></p>
                 </div>
             </div>
         </div>
@@ -478,6 +491,7 @@
 <script src="assets/js/modernizr.js"></script>
 <script src="assets/js/timer.js"></script>
 <script src="assets/js/scripts.js"></script>
+<script src="assets/js/loader.js"></script>
 <!--<script src="assets/js/bootstrap.js"></script>-->
 <!--<script src="assets/js/bootstrap.min.js"></script>-->
 <!--<script src="assets/jquery.easing.min.js"></script>-->
