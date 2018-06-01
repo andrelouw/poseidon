@@ -28,6 +28,12 @@
 
 /*}*/
 
+@media (max-width: 575px) {
+    .gifts-left p, .gifts-left h2, .gifts-right p, .gifts-right h2 {
+        text-align: center
+    }
+}
+
 /* x-Small */
 @media (max-width: 767px) and (orientation: portrait) {
     .landing {
