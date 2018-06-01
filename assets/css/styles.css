@@ -89,11 +89,14 @@ section {
 .protea-container {
     position: relative;
     width: 100%;
+    z-index: -100;
 }
 
 .protea {
     position: absolute;
     overflow: hidden;
+    -webkit-transition: opacity 2s; /* Safari */
+    transition: opacity 2s;
 }
 
 /* Cards */
@@ -182,6 +185,10 @@ section {
 header h1 {
     margin-top: 88px;
     margin-bottom: 34px;
+}
+
+#landing .protea-container {
+    z-index: 0;
 }
 
 #landing .protea {
@@ -285,6 +292,10 @@ header h1 {
     margin-bottom: 20px;
 }
 
+#vna .protea-container {
+    z-index: 0;
+}
+
 #vna .protea {
     top: -190px;
     left: -20px;
@@ -332,6 +343,7 @@ header h1 {
     right: 0px;
     width: 294px;
     height: 629px;
+    opacity: 0.8;
 }
 
 #rsvp .protea img {
@@ -388,9 +400,10 @@ header h1 {
     left: -270px;
     width: 744px;
     height: 816px;
+    opacity: 0.8;
 }
 
 #people .protea img {
-    width: 100%
+    width: 100%;
 }
 

@@ -40,26 +40,31 @@
     #landing .protea {
         left: auto;
         right: 590px;
+        opacity: 0.1;
     }
 
     #detail .protea {
-        right: auto;
-        left: 680px;
+        /*right: auto;*/
+        /*left: 680px;*/
+        opacity: 0.2;
     }
 
     #vna .protea {
-        left: auto;
-        right: 780px;
+        /*left: auto;*/
+        /*right: 780px;*/
+        opacity: 0.2;
     }
 
     #rsvp .protea {
-        right: auto;
-        left: 690px;
+        /*right: auto;*/
+        /*left: 690px;*/
+        opacity: 0.2;
     }
 
     #people .protea {
-        left: auto;
-        right: 515px;
+        /*left: auto;*/
+        /*right: 515px;*/
+        opacity: 0.1;
     }
 
     .gift-icon {
@@ -86,26 +91,31 @@
     #landing .protea {
         left: auto;
         right: 590px;
+        opacity: 0.5;
     }
 
     #detail .protea {
-        right: auto;
-        left: 680px;
+        /*right: auto;*/
+        /*left: 680px;*/
+        opacity: 0.3;
     }
 
     #vna .protea {
-        left: auto;
-        right: 780px;
+        /*left: auto;*/
+        /*right: 780px;*/
+        opacity: 0.5;
     }
 
     #rsvp .protea {
-        right: auto;
-        left: 690px;
+        /*right: auto;*/
+        /*left: 690px;*/
+        opacity: 0.5;
     }
 
     #people .protea {
-        left: auto;
-        right: 515px;
+        /*left: auto;*/
+        /*right: 515px;*/
+        opacity: 0.3;
     }
 
     .gift-icon {
@@ -122,8 +132,13 @@
 /* Medium */
 @media (min-width: 992px) and (max-width: 1199px) {
     #detail .protea {
-        right: auto;
-        left: 680px;
+        opacity: 0.5;
+        /*right: auto;*/
+        /*left: 680px;*/
+    }
+
+    #people .protea {
+        opacity: 0.5;
     }
 }
 
