@@ -79,6 +79,8 @@ section {
     color: black;
     border-color: #a6c6c6;
     margin-bottom: 10px;
+    transition: color 1s;
+    -webkit-transition: color 1s; /* Safari */
 }
 
 .button:hover {
@@ -99,6 +101,7 @@ section {
     transition: opacity 2s;
 }
 
+
 /* Cards */
 .card-section {
     text-align: center;
@@ -116,6 +119,12 @@ section {
 .card-icon {
     width: 143px;
     height: 143px;
+    -webkit-transition: transform 1s; /* Safari */
+    transition: transform 1s;
+}
+
+.card-icon:hover {
+    transform: translateY(-10px);
 }
 
 .card-section .title {
@@ -233,6 +242,8 @@ header h1 {
     margin-top: -150px;
     margin-left: -20px;
     position: absolute;
+    -webkit-transition: background 1s;
+    transition: background 1s;
 }
 .down-arrow-btn:hover, .down-arrow-btn:focus {
     color: #fff;
