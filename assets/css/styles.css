@@ -6,8 +6,8 @@
 }
 
 @font-face {
-    font-family: Befindisa;
-    src: url(../fonts/Befindisa.otf);
+    font-family: Bloom;
+    src: url(../fonts/BeautifulBloom-Regular.otf);
 }
 
 @font-face {
@@ -45,7 +45,7 @@ h1 {
 }
 
 h2 {
-    font-family: Befindisa, serif;
+    font-family: Bloom, serif;
     font-size: 4rem;
     font-weight: normal;
     font-style: normal;
@@ -120,7 +120,7 @@ section {
 .card-section .title {
     font-family: Avenir, sans-serif;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
@@ -163,11 +163,12 @@ section {
 }
 
 #landing .title {
-    font-family: Befindisa, serif;
-    font-size: 5.5rem;
+    font-family: Bloom, serif;
+    font-size: 7.5rem;
     text-align: center;
     color: black;
     margin-bottom: 0;
+    text-shadow: 3px 3px 0 #a7c6c6;
 }
 
 .timer {
@@ -192,8 +193,8 @@ header h1 {
 }
 
 #landing .protea {
-    height: 900px;
-    width: 400px;
+    height: 910px;
+    width: 460px;
     top: 180px;
     left: 0;
 }
@@ -206,20 +207,43 @@ header h1 {
 }
 
 /* Info */
+#info {
+    margin-bottom: 70px;
+}
 #info .card-section .title {
-
 }
 
 #info .card-section .content {
+}
 
+.down-arrow-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: rgb(168, 198, 198, 0.4);
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: -150px;
+    position: absolute;
+}
+.down-arrow-btn:hover, .down-arrow-btn:focus {
+    color: #fff;
+    background: rgba(168, 198, 198);
 }
 
 /* Detail */
 #detail .card-section .title {
-    font-family: Befindisa, serif;
+    font-family: Bloom, serif;
     font-size: 2.5rem;
     font-weight: normal;
     letter-spacing: 0.1rem;
+    margin-bottom: 10px;
 }
 
 #detail .card-section .content {
@@ -229,14 +253,14 @@ header h1 {
     letter-spacing: 0.04rem;
     text-align: center;
     color: black;
-}
-
-#detail .card-icon {
     margin-bottom: 40px;
 }
 
+#detail .card-icon {
+}
+
 #detail .card-title {
-    margin-bottom: 27px;
+    margin-bottom: 15px;
 }
 
 #detail .protea {
@@ -274,7 +298,7 @@ header h1 {
 }
 
 #quote .verse {
-    font-family: Befindisa, serif;
+    font-family: Bloom, serif;
     font-size: 2.5rem;
     font-weight: normal;
     font-style: normal;
@@ -286,6 +310,10 @@ header h1 {
 }
 
 /* Venue en Accommodation */
+#vna {
+    margin-bottom: 100px;
+}
+
 #vna .description {
     max-width: 300px;
     margin: auto;
@@ -297,12 +325,12 @@ header h1 {
 }
 
 #vna .protea {
-    top: -190px;
+    top: -202px;
     left: -20px;
 }
 
 #vna .protea img {
-    width: 230px;
+    width: 330px;
     transform: rotate(-180deg);
     opacity: 0.47;
 }
