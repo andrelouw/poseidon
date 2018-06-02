@@ -145,6 +145,21 @@
 
     #people .protea {
         opacity: 0.5;
+        top: -450px;
+        width: 644px;
+    }
+
+
+    #rsvp .protea {
+        opacity: 0.46;
+    }
+
+    #quote .text {
+        font-size: 2.5rem;
+    }
+
+    #rsvp .content {
+        font-size: 1.1rem;
     }
 }
 
