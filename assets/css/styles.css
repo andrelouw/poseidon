@@ -473,3 +473,49 @@ a.expand { font-family: Avenir; display: block; position: absolute; z-index: 100
     width: 100%;
 }
 
+#rsvp {
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #eceff0;
+}
+
+footer p {
+    font-family: Avenir, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: oblique;
+    text-align: center;
+    color: #041216;
+}
+
+.footer-text {
+    margin-top: 10px;
+    margin-bottom: 21px;
+}
+
+.footer-pattern img {
+    height: 75px;
+    margin: auto;
+    margin-top: -37px;
+}
+
+.footer-text img {
+    display:block;
+    margin: auto;
+    width: 97px;
+    height: 82px;
+}
+
+.footer-pattern-left img {
+    float: right;
+}
+.footer-pattern-right img {
+    float: left;
+}
+
+.footer-pattern .down-arrow-btn {
+    margin-top: -20px;
+}
+
