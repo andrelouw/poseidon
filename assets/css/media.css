@@ -284,3 +284,9 @@
     }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 989px) {
+    #quote {
+        background-attachment: scroll !important;
+    }
+}
+
