@@ -40,6 +40,7 @@
         background-position: calc(100% + 80px);
         transition: background-position 1s ease-in-out;
     }
+
 }
 
 @media (max-width: 767px) {
@@ -158,14 +159,15 @@
     #rsvp .card-section .content {
         font-size: 1rem;
     }
+
+    #quote {
+        background: url('../img/quote.jpg') no-repeat bottom center scroll;
+    }
 }
 
 /* Small */
 @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
-    /*#landing .protea {*/
-        /*left: auto;*/
-        /*right: 590px;*/
-    /*}*/
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -220,6 +222,10 @@
 
     #quote .text {
         line-height: 1.2;
+    }
+
+    #quote {
+        background: url('../img/quote.jpg') no-repeat bottom center scroll;
     }
 }
 /* Medium */

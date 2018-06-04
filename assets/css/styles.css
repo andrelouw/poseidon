@@ -233,7 +233,7 @@ header h1 {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     -o-border-radius: 50%;
-    background: rgb(168, 198, 198, 0.4);
+    background: rgba(168, 198, 198, 0.4);
     display: inline-block;
     color: #fff;
     font-size: 16px;
@@ -247,7 +247,7 @@ header h1 {
 }
 .down-arrow-btn:hover, .down-arrow-btn:focus {
     color: #fff;
-    background: rgba(168, 198, 198);
+    background: rgba(168, 198, 198, 1);
 }
 
 /* Detail */
@@ -499,6 +499,7 @@ footer p {
     height: 75px;
     margin: auto;
     margin-top: -37px;
+    overflow: hidden;
 }
 
 .footer-text img {
@@ -510,9 +511,11 @@ footer p {
 
 .footer-pattern-left img {
     float: right;
+    overflow: hidden;
 }
 .footer-pattern-right img {
     float: left;
+    overflow: hidden;
 }
 
 .footer-pattern .down-arrow-btn {
