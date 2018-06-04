@@ -44,9 +44,9 @@
 }
 
 @media (max-width: 767px) {
-    html {
-        overflow-x: hidden;
-    }
+    /*html {*/
+        /*overflow-x: hidden;*/
+    /*}*/
     h1 {
         font-size: 2rem;
         margin-bottom: 50px;
@@ -132,6 +132,7 @@
         /*left: auto;*/
         /*right: 515px;*/
         opacity: 0.1;
+        width: 580px;
     }
 
     #people .quote {
@@ -174,9 +175,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    html {
-        overflow-x: hidden;
-    }
+    /*html {*/
+        /*overflow-x: hidden;*/
+    /*}*/
     h1 {
         margin-bottom: 80px;
     }

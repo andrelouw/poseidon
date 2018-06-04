@@ -478,6 +478,23 @@ a.expand { font-family: Avenir; display: block; position: absolute; z-index: 100
 }
 
 footer {
+    /*background-color: #eceff0;*/
+    position: relative;
+    overflow-x: hidden;
+}
+
+.footer-text-container {
+
+    background-color: #eceff0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.footer-text-container.float {
+    margin-top: -37px;
+    z-index: -1;
+    height: 15px;
     background-color: #eceff0;
 }
 
@@ -498,8 +515,7 @@ footer p {
 .footer-pattern img {
     height: 75px;
     margin: auto;
-    margin-top: -37px;
-    overflow: hidden;
+    /*margin-top: -37px;*/
 }
 
 .footer-text img {
@@ -509,6 +525,8 @@ footer p {
     height: 82px;
 }
 
+.footer-pattern-right {
+}
 .footer-pattern-left img {
     float: right;
     overflow: hidden;
@@ -519,6 +537,6 @@ footer p {
 }
 
 .footer-pattern .down-arrow-btn {
-    margin-top: -20px;
+    margin-top: 15px;
 }
 
