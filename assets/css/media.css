@@ -164,9 +164,6 @@
         font-size: 1rem;
     }
 
-    #quote {
-        background: url('../img/quote.jpg') no-repeat bottom center scroll;
-    }
 }
 
 /* Small */
@@ -231,9 +228,6 @@
         line-height: 1.2;
     }
 
-    #quote {
-        background: url('../img/quote.jpg') no-repeat bottom center scroll;
-    }
 }
 /* Medium */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -284,9 +278,7 @@
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 989px) {
-    #quote {
-        background-attachment: scroll !important;
-    }
+@media screen and (max-width:1024px) {
+    #quote { background-attachment: scroll; }
 }
 
