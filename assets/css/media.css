@@ -44,6 +44,9 @@
 }
 
 @media (max-width: 767px) {
+    html {
+        overflow-x: hidden;
+    }
     h1 {
         font-size: 2rem;
         margin-bottom: 50px;
@@ -171,6 +174,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    html {
+        overflow-x: hidden;
+    }
     h1 {
         margin-bottom: 80px;
     }
