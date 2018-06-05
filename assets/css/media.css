@@ -37,8 +37,7 @@
 /* x-Small */
 @media (max-width: 767px) and (orientation: portrait) {
     .landing {
-        background-position: calc(100% + 80px);
-        transition: background-position 1s ease-in-out;
+        background-position: calc(100% + 120px);
     }
 
 }
@@ -175,6 +174,10 @@
     /*html {*/
         /*overflow-x: hidden;*/
     /*}*/
+    .landing {
+        background-position: calc(100% + 120px);
+    }
+
     h1 {
         margin-bottom: 80px;
     }
@@ -231,6 +234,10 @@
 }
 /* Medium */
 @media (min-width: 992px) and (max-width: 1199px) {
+    .landing {
+        background-position: calc(100% + 120px);
+    }
+
     h1 {
         margin-bottom: 80px;
     }
@@ -273,8 +280,8 @@
 /* iPhone X */
 @media (min-height: 812px) and (min-width: 375px) and (orientation: portrait) {
     .landing {
-        background-position: calc(100% + 130px);
-        transition: background-position 1s ease-in-out;
+        background-position: calc(100% + 190px);
+
     }
 }
 

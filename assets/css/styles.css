@@ -158,6 +158,7 @@ section {
     background: white url(../img/landing.jpg) no-repeat right center scroll;
     background-size: cover;
     right: 0;
+    transition: background-position 1s ease-in-out;
 }
 
 .landing-body {
